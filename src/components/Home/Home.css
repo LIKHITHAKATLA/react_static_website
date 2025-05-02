@@ -1,0 +1,61 @@
+
+#home {
+    background-image: url("https://img.freepik.com/premium-photo/coffee-background-copyspace_953680-24722.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    color: #fff;
+  }
+  
+  #home h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: aqua;
+  }
+  
+  
+  #home p {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ddd;
+    margin-bottom: 30px;
+  }
+  
+  #home button {
+    width: fit-content;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #home button:hover {
+    background-color: #e74c3c; /* nice hover effect */
+  }
+  
+  /* Optional: make text responsive */
+  @media (max-width: 768px) {
+    #home {
+      padding-left: 20px;
+      height: 70vh;
+    }
+  
+    #home h1 {
+      font-size: 32px;
+    }
+  
+    #home p {
+      font-size: 14px;
+    }
+  }
+  

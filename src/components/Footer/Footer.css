@@ -1,0 +1,128 @@
+#footer {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #1c1c1c; /* dark background */
+    color: #ffffff;
+    padding: 50px 0 0 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 30px;
+}
+
+.footer1 > div {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer1 h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer1 p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #bbbbbb;
+    margin-bottom: 10px;
+}
+
+.footer_contact p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer2 {
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    padding: 15px 0;
+    font-size: 14px;
+}
+.footer_contact p:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.footer_home p:hover{
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+   
+    .footer1 {
+        padding: 0 30px;
+    }
+
+    .footer1 > div {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .footer1 h2 {
+        font-size: 18px;
+    }
+
+    .footer1 p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #footer{
+        margin-top: 400px;
+    }
+    .footer1 {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .footer1 > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer1 h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .footer1 p {
+        font-size: 14px;
+    }
+
+    .footer2 {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #footer{
+        margin-top: 120px;
+    }
+    .footer1 h2 {
+        font-size: 16px;
+    }
+
+    .footer1 p {
+        font-size: 12px;
+    }
+
+    .footer2 {
+        padding: 8px 0;
+        font-size: 12px;
+    }
+
+    .footer1 > div {
+        margin: 10px 0;
+    }
+}

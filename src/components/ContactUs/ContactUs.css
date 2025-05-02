@@ -1,0 +1,128 @@
+.cont{
+    text-align: center;
+    margin: 40px auto;
+    color: #f26522; 
+
+}
+  .contactus {
+    display: flex;
+    /* width: 100%; */
+    height: 90vh;
+    gap: 20px;
+    margin: 0px 60px;
+
+}
+
+.contactus_left {
+    flex: 1;
+    background: url('https://th.bing.com/th/id/OIP.Omxz6YxkdWGuv3uqoImxogHaE8?w=276&h=183&c=7&r=0&o=5&pid=1.7') no-repeat center center/cover; /* Add your background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactus_left form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+}
+
+.contactus_left input {
+    margin: 10px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.contactus_left input {
+    background-color: white;
+}
+
+.contactus_left button {
+    background-color: #d64528;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: fit-content;
+    margin: auto;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contactus_right {
+    flex: 1;
+}
+
+.contactus_right iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .contactus {
+        margin: 0px 30px;
+    }
+
+    .contactus_left form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactus {
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px 10px;
+    }
+
+    .contactus_left,
+    .contactus_right {
+        flex: none;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .contactus_left form {
+        width: 100%;
+        max-width: none;
+    }
+
+    .contactus_left input {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .contactus_left button {
+        font-size: 14px;
+        padding: 12px 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contactus {
+        margin: 10px 5px;
+    }
+    .contactus_left,
+    .contactus_right {
+        flex: none;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .contactus_left input {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .contactus_left button {
+        font-size: 12px;
+        padding: 10px 25px;
+    }
+   
+}
