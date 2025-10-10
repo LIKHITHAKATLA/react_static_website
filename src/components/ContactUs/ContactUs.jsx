@@ -1,7 +1,7 @@
 import "./ContactUs.css"
 function ContactUs(){
     return(
-        <div id="">
+        <div id="contact">
             <h1 className="cont">CONTACT US</h1>
         <div className="contactus">
             <div className="contactus_left">

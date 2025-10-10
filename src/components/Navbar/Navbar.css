@@ -1,89 +1,109 @@
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: 'Poppins', sans-serif;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #222; /* dark background */
+    background-color: #222;
     padding: 15px 50px;
     position: sticky;
-    top: 5px;
-  }
-  
-  .left_nav h1 {
+    top: 10px;
+}
+
+.left_nav h1 {
     color: #ffffff;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .right_nav {
+}
+
+.right_nav {
     display: flex;
     align-items: center;
-    gap: 30px;
-  }
-  
-  .right_nav li {
+}
+
+.right_nav ul {
+    display: flex;
+    gap: 20px; /* more gap for bigger font */
     list-style: none;
-    color: #ffffff;
-    font-size: 16px;
+}
+
+.right_nav li {
+    list-style: none;
+    font-size: 1px; /* increased font size */
     cursor: pointer;
     position: relative;
+}
+
+.right_nav ul li a {
+    color: #ffffff;        
+    text-decoration: none; 
+    font-size: 16px; /* match li font size */
     transition: color 0.3s;
-  }
-  .menu{
-    display: none;
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-    margin-left: 100px;
-  }
- 
-  
-  .right_nav li:hover {
-    color: #e74c3c;
-  }
-  
-  /* Search Icon Style */
-  .right_nav li svg {
-    font-size: 20px;
-    vertical-align: middle;
-  }
-  
-  /* Optional hover underline */
-  .right_nav li::after {
+}
+
+/* Optional underline animation on hover */
+.right_nav ul li a::after {
     content: '';
     height: 2px;
     width: 0;
-    background: #e74c3c;
+    background: #e74c3c; 
     position: absolute;
     left: 0;
     bottom: -5px;
     transition: width 0.3s;
-  }
-  
-  .right_nav li:hover::after {
-    width: 100%;
-  }
-  
+}
 
-  @media (max-width:870px) {
-    .right_nav{
-      display: none;
+.right_nav ul li a:hover::after {
+    width: 100%;
+}
+
+.right_nav ul li a:hover {
+    color: #e74c3c; /* change color on hover */
+}
+
+.right_nav li svg {
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+.menu {
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.right_nav li svg {
+    font-size: 28px;
+    vertical-align: middle;
+    color: #ffffff; /* make search icon white */
+    cursor: pointer; /* optional: change cursor on hover */
+    transition: color 0.3s; /* optional: smooth hover */
+}
+
+.right_nav li svg:hover {
+    color: #e74c3c; /* optional: change icon color on hover */
+}
+
+
+@media (max-width: 870px) {
+    .right_nav {
+        display: none;
     }
-    .left_nav{
-      margin-left: -30px;
+    .left_nav {
+        margin-left: -30px;
     }
-    .menu{
-      display: inline-block;
+    .menu {
+        display: inline-block;
     }
-  }
-    
+}
